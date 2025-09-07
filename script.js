@@ -168,8 +168,8 @@ setInterval(() => {
     bg1.style.backgroundImage = `url('${bgImages[next]}')`;
     bg2.style.opacity = 0;
     current = next;
-  }, 2000);
-}, 5000);
+  }, 4000);
+}, 10000);
 
 // Auto Logout After 12 Minutes
 let autoLogoutTimer;
@@ -178,4 +178,5 @@ function resetLogoutTimer(){
   autoLogoutTimer = setTimeout(()=>{ alert("Session expired due to inactivity!"); logout(); }, 12*60*1000);
 }
 ['click','keypress','mousemove','scroll'].forEach(evt=>{document.addEventListener(evt, resetLogoutTimer);});
+
 
