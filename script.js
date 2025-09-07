@@ -154,11 +154,7 @@ function highlightKH(){
 
 // === Background Slideshow & Auto Logout ===
 const bgImages = [
-  'https://www.timeschronicle.ca/wp-content/uploads/2020/07/horse18_w.jpg',
-  'https://www.racingqueensland.com.au/kenticoimage.axd/media/e7bcc609-04c1-43a0-8880-1c293fd24f07/c3195b24-d3fb-402b-af62-0ae49f05f28.jpg?format=jpg&width=1370&height=514&quality=90&rmode=crop&d=094323&hmac=71380ead0ca57bbb740521bc2ade52dad61cd368cd20399f8a901826092373f5',
-  'https://www.thecreek.com.au/wp-content/uploads/2023/12/finals.jpg',
-  'https://tscom.imgix.net/RAINBOWROOM_KENTUCKIANA_0922_ba503f8364.false?auto=compress,format',
-  'https://tiogadowns.com/wp-content/uploads/media/hero/Racing-HERO.jpg'
+  'https://www.thecreek.com.au/wp-content/uploads/2023/12/finals.jpg'
 ];
 let current = 0;
 const bg1 = document.getElementById('bg1');
@@ -182,3 +178,4 @@ function resetLogoutTimer(){
   autoLogoutTimer = setTimeout(()=>{ alert("Session expired due to inactivity!"); logout(); }, 12*60*1000);
 }
 ['click','keypress','mousemove','scroll'].forEach(evt=>{document.addEventListener(evt, resetLogoutTimer);});
+
